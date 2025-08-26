@@ -107,6 +107,64 @@ body {
     flex-shrink: 0;
 }
 
+/* Hero Section with Profile Photo */
+.hero {
+    background: rgba(10, 10, 15, 0.7);
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent);
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.3);
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.4);
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--text);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -253,6 +311,64 @@ body {
     border-bottom: none;
 }
 
+/* About Section Styling */
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-intro {
+    margin-bottom: 2rem;
+}
+
+.about-intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 0;
+}
+
+.about-intro strong {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.about-expertise {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(99, 102, 241, 0.05);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+}
+
+.about-expertise h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.about-expertise p {
+    line-height: 1.6;
+    color: var(--text);
+    margin-bottom: 0;
+}
+
+.about-goal {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+}
+
+.about-goal p {
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
 /* Timeline */
 .timeline {
     position: relative;
@@ -371,6 +487,44 @@ body {
 .type {
     color: var(--muted);
     font-size: 0.9rem;
+}
+
+/* Internship Card and Info Box Styling */
+.internship-card {
+    position: relative;
+}
+
+.company {
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Info box styling */
+.info-box {
+    background-color: rgba(42, 42, 42, 0.8);
+    border-left: 5px solid var(--accent);
+    padding: 1.2rem 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.info-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border-left-color: #4f46e5;
+}
+
+/* Content inside info box */
+.info-box p {
+    margin: 0;
+    line-height: 1.7;
+    color: #e0e0e0;
+    font-size: 0.95rem;
 }
 
 /* Contact Form */
@@ -544,6 +698,34 @@ body {
     
     .name {
         font-size: 2rem;
+    }
+    
+    /* Hero Section Mobile */
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
     }
     
     .nav-list {
